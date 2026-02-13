@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OPPConcepts.Backend/OPPConcepts.Backend.csproj" />
+  <Project Path="OPPConcepts.Frontend/OPPConcepts.Frontend.csproj" />
+</Solution>
