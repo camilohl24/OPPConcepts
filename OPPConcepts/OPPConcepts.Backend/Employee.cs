@@ -23,7 +23,6 @@ public abstract class Employee
     // Constructors
 
     // properties
-    // si sale raya  verde se le quita poniendo el null en caso que se pueda dejar por defecto nulo y con admiracionsi ni se puede
     public int Id { get; set; }
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
@@ -34,7 +33,7 @@ public abstract class Employee
     public override string ToString()
     {
         return $"{Id}\t{FirstName} {LastName}\n\t" +
-               $"Value to pay :  {GetValueToPay()}";
+               $"Value to pay :  {GetValueToPay(),20:C2}";
     }
     public abstract decimal GetValueToPay();
     
