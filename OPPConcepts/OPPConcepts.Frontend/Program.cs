@@ -16,6 +16,10 @@ try
     employees.Add(employee3);
     var employee4 = new HourlyEmployee(2235, "Juaquin ", "peña", true, new Date(1800, 5, 27), new Date(2019, 9, 11), 10000, 3);
     employees.Add(employee4);
+    var employee5 = new ComissionEmployee(2236, "camilo ", "hernandez", true, new Date(1994, 9, 24), new Date(2026, 4, 11), 0.03f, 300000000);
+    employees.Add(employee5);
+    var employee6 = new ComissionEmployee(2237, "Julian ", "hernandesz", true, new Date(1991, 4, 27), new Date(2018, 9, 17), 0.02f, 250000000);
+    employees.Add(employee6);
     foreach (var employee in employees)
     {
         Console.WriteLine(new string('_', 47));

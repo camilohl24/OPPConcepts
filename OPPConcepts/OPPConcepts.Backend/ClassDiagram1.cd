@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OPPConcepts.Backend.Date">
-    <Position X="5.75" Y="2.25" Width="1.5" />
+    <Position X="4" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAQEAAAMAAAAgAAAEEAAAgAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.Employee">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.5" />
+    <AssociationLine Name="HireDate" Type="OPPConcepts.Backend.Date">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.864" Y="0.096" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>ABACAEAAAAAAAAAEEAAAAAAAACAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>Employee.cs</FileName>
@@ -19,7 +24,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="OPPConcepts.Backend.SalaryEmployee">
-    <Position X="8.5" Y="1.5" Width="1.25" />
+    <Position X="7.5" Y="0.5" Width="1.25" />
     <Members>
       <Method Name="SalaryEmployee" Hidden="true" />
     </Members>
@@ -29,10 +34,26 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OPPConcepts.Backend.HourlyEmployee">
-    <Position X="0.5" Y="1.25" Width="1.5" />
+    <Position X="7.5" Y="3.25" Width="2" />
+    <InheritanceLine Type="OPPConcepts.Backend.Employee" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.562" />
+        <Point X="5.623" Y="2.562" />
+        <Point X="5.623" Y="3.127" />
+        <Point X="8.5" Y="3.127" />
+        <Point X="8.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AIAABAAAAAAAAAAEAAgAAAAAAABEAAAIAAAAAAAAAAE=</HashCode>
       <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPPConcepts.Backend.ComissionEmployee">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEIAAABAAAAAAAAAAIAIhAAAAAAAA=</HashCode>
+      <FileName>ComissionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
