@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OPPConcepts.Backend;
 
-public abstract class Employee
+public abstract class Employee : IPay
 {
     protected Employee()
     {
@@ -20,7 +20,6 @@ public abstract class Employee
         HireDate = hireDate;
     }
 
-    // Constructors
 
     // properties
     public int Id { get; set; }
